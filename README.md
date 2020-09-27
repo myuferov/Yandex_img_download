@@ -9,10 +9,10 @@ templates: html странички
 Download_YA питон скрипт для обработки текста и зарузки изображений
 main скрипт для запуска программы 
 
-Для запуска программы нужен Python 3.5+ и библиотеки:
-# pip install Flask
-# pip install Selenium
-# pip install requests
-# pip install beautifulsoup4 + pip install lxml
-# pip install Pillow
-# pip install rutermextract
+## Для запуска программы нужен Python 3.5+ и библиотеки:
+1) pip install Flask
+2) pip install Selenium
+3) pip install requests
+4) pip install beautifulsoup4 + pip install lxml
+5) pip install Pillow
+6) pip install rutermextract
