@@ -27,6 +27,20 @@ chrome_options.add_experimental_option("prefs", prefs)
 driver = webdriver.Chrome("chromedriver\chromedriver.exe", options=chrome_options)
 
 def normalized_text(text: str):
+    """
+    
+
+    Parameters
+    ----------
+    text : str
+        Текст из которого надо извлечь основные слова.
+    
+    Returns
+    -------
+    normalized : list
+        Список основных слов/выражений
+
+    """    
     term_extractor = TermExtractor()
     normalized = []
     for term in term_extractor(text):
@@ -87,6 +101,8 @@ def save_img(img_ya, text_img, index: int, watermark: bool, cleardir: bool = Fal
         Колличество требуемых изображений.
     watermark : bool
         Нанесение водяного знака.
+    cleardir : bool
+        Очистить диррикторию перед загрузкой изображений.        
 
     Returns
     -------
